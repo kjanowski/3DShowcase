@@ -23,7 +23,7 @@
 
 		import { OrbitControls } from 'https://cdn.skypack.dev/three@0.136.0/examples/jsm/controls/OrbitControls.js';
 
-		const controls = new OrbitControls();
+		const controls = new OrbitControls(renderer.domElement);
 		
 		const light = new THREE.HemisphereLight( 0xffffbb, 0x080820, 1 );
 		light.position.y = 3;
